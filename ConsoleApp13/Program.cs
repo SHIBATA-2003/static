@@ -1,27 +1,7 @@
-﻿//using System;
+﻿using System;
 
 public class ma
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("直方体");
-        Console.WriteLine(Box.GetVolumeB(InputFloat("幅を入力"), InputFloat("高さを入力"), InputFloat("奥行きを入力")));
-
-        Console.WriteLine("円柱");
-        //    Cylinder cyl = new Cylinder(InputFloat("底面の半径を入力"), InputFloat("高さを入力"));
-
-        Console.WriteLine("球");
-        //   Sphere sph = new Sphere(InputFloat("半径を入力"));
-
-        Console.WriteLine("三角柱");
-        //   TriangularPrism tri = new TriangularPrism(InputFloat("高さを入力"), InputFloat("三角形の高さを入力"), InputFloat("底辺の長さを入力"));
-
-        //   Console.WriteLine("直方体の表面積 = " + Box.GetSurfaceB() + "体積=" + Box.GetVolumeB());
-        //  Console.WriteLine("円柱の表面積 = " + cyl.GetSurfaceC() + " 体積 = " + cyl.GetVolumeC());
-        // Console.WriteLine("球の表面積 = " + sph.GetSurfaceS() + " 体積 = " + sph.GetVolumeS());
-        // Console.WriteLine("三角柱の表面積 = " + tri.GetSurfaceT() + " 体積 = " + tri.GetVolumeT());
-    }
-
     static float InputFloat(string su)
     {
         float input;
@@ -86,4 +66,24 @@ public class ma
             return (float)((dept * side) + heigh * ((Math.Sqrt(si + de)) + dept + side));
         }
     }
+    static void Main()
+    {
+        Console.WriteLine("直方体");
+        Console.WriteLine(Box.GetVolumeB(InputFloat("幅を入力"), InputFloat("高さを入力"), InputFloat("奥行きを入力")));
+
+        Console.WriteLine("円柱");
+        //Cylinder cyl = new Cylinder(InputFloat("底面の半径を入力"), InputFloat("高さを入力"));
+
+        Console.WriteLine("球");
+        //Sphere sph = new Sphere(InputFloat("半径を入力"));
+
+        Console.WriteLine("三角柱");
+        //TriangularPrism tri = new TriangularPrism(InputFloat("高さを入力"), InputFloat("三角形の高さを入力"), InputFloat("底辺の長さを入力"));
+
+        Console.WriteLine("直方体の表面積 = " + Box.GetSurfaceB() + "体積=" + Box.GetVolumeB());
+        //Console.WriteLine("円柱の表面積 = " + cyl.GetSurfaceC() + " 体積 = " + cyl.GetVolumeC());
+        //Console.WriteLine("球の表面積 = " + sph.GetSurfaceS() + " 体積 = " + sph.GetVolumeS());
+        //Console.WriteLine("三角柱の表面積 = " + tri.GetSurfaceT() + " 体積 = " + tri.GetVolumeT());
+    }
+
 }
