@@ -4,7 +4,7 @@ public class ma
 {
     static void Main()
     {
-        float value1=0,value2=0,value3=0;
+        float value1,value2,value3;
         Console.WriteLine("直方体");
        value1= InputFloat("幅を入力");
        value2= InputFloat("高さを入力");
